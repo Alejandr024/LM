@@ -1,0 +1,34 @@
+<!-- Crea un XSD que valide este XML usando los tipos correctos:
+
+nombre → xs:string
+precio → xs:decimal
+stock → xs:integer
+disponible → xs:boolean
+fecha_lanzamiento → xs:date
+
+XML de ejemplo:
+
+<?xml version="1.0"?>
+<producto>
+  <nombre>Laptop Dell</nombre>
+  <precio>1299.99</precio>
+  <stock>45</stock>
+  <disponible>true</disponible>
+  <fecha_lanzamiento>2026-01-15</fecha_lanzamiento>
+</producto>
+
+-->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="producto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nombre" type="xs:string"/>
+        <xs:element name="precio" type="xs:decimal"/>
+        <xs:element name="stock" type="xs:integer"/>
+        <xs:element name="disponible" type="xs:boolean"/>
+        <xs:element name="fecha_lanzamiento" type="xs:date"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

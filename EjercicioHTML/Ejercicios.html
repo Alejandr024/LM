@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1 align="center">Ejercicio 1</h1>
+        <div style="border: 2px solid black; margin: auto; height: 600px; width: 700px; align-content: center;">
+            <h1 align="center"><u>Programacion orientada a objetos</u></h1>
+
+            <p style="margin: 10px;">La <b>Programación Orientada a Objetos</b> (POO, o en inglés OOP, <i>Object Oriented
+    Programming</i>) es un <u>paradigma de programación</u> que pretende desarrollar aplicaciones
+    basándose en el comportamiento de los objetos del mundo real.</p>
+
+            <h2 align="right" style="margin: 10px;">Conceptos fundamentales</h2>
+
+            <ul>
+                <li><b>Clase</b>: modelo, molde o patron a partir del cual se crearan instancias concreta (objetos). Al crearse se definiran su nombre, sus atributos, sus métodos y si es construida a partir de otra clase ya existente (<i>herencia</i>).</li>
+                <li><b>Objeto</b>: instancia concreta de una clase. Tendrá un estado concreto y ocupará un espacio en memoria.</li>
+                <li><b>Atributo</b>: característica de unobjeto (o clase). Los atributos de un objeto se definen al construir la clase de la que luego se instanciará el objeto. También se denomina en ocasiones <i>propiedad</i>.</li>
+                <li><b>Método</b>: funcionalidad asociada a un objeto (o clase) y que se definen al construir la clase de la que luego se instanciará el objeto.</li>
+            </ul>
+
+            <h3 align="right" style="margin: 10px;"> Java: un ejemplo</h3>
+
+            <p style="margin: 10px;">El lenguaje de programación <u>Java</u> es un exponente de la programación orientada a
+    objetos. Un pequeño ejemplo de un código en Java sería:</p>
+    
+            <table style="width: 100%; border-collapse: collapse; margin: 0; padding: 0;">
+                <tr>
+                    <td style="width: 65%; margin: 0; padding: 0;">
+                        <pre style=" margin: 30px;">
+public class Circulo{
+    Punto centro;
+    int radio;
+    Circulo(Punto centro, int radio){
+        this.centro = centro;
+        this.radio = radio;
+    }
+}</pre>
+                    </td>
+                    <td style="width: 35%; text-align: center; vertical-align: middle; padding: 0; margin: 0;">
+                        <img src="Captura de pantalla 2026-02-26 150245.png" alt="Logo Java" width="120" style="margin: 0; padding: 0; display: block;">
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <h1 align="center">Ejercicio 2</h1>
+        <p style="margin: 20px; text-align: center;">Realiza una lista que muestre en su primer nivel los nombres de los planetas del sistema solar y, en un segundo nivel, los satélites de cada planeta.</p>
+        
+        <div style="margin: auto; width: fit-content;">
+            <ul style="margin: 20px;">
+                <li style="margin-bottom: 25px;"><b>Mercurio</b>
+                    <ul>
+                        <li>Sin satélites</li>
+                    </ul>
+                </li>
+                <li style="margin-bottom: 25px;"><b>Venus</b>
+                    <ul>
+                        <li>Sin satélites</li>
+                    </ul>
+                </li>
+                <li style="margin-bottom: 25px;"><b>Tierra</b>
+                    <ul>
+                        <li>Luna</li>
+                    </ul>
+                </li>
+                <li style="margin-bottom: 25px;"><b>Marte</b>
+                    <ul>
+                        <li>Fobos</li>
+                        <li>Deimos</li>
+                    </ul>
+                </li>
+                <li style="margin-bottom: 25px;"><b>Júpiter</b>
+                    <ul>
+                        <li>Io</li>
+                        <li>Europa</li>
+                        <li>Ganimedes</li>
+                        <li>Calisto</li>
+                    </ul>
+                </li>
+                <li style="margin-bottom: 25px;"><b>Saturno</b>
+                    <ul>
+                        <li>Titán</li>
+                        <li>Encélado</li>
+                        <li>Japeto</li>
+                        <li>Rea</li>
+                    </ul>
+                </li>
+                <li style="margin-bottom: 25px;"><b>Urano</b>
+                    <ul>
+                        <li>Titania</li>
+                        <li>Oberón</li>
+                        <li>Umbriel</li>
+                        <li>Ariel</li>
+                    </ul>
+                </li>
+                <li style="margin-bottom: 25px;"><b>Neptuno</b>
+                    <ul>
+                        <li>Tritón</li>
+                        <li>Proteo</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <h1 align="center">Ejercicio 3</h1>
+        
+        <table border="1" width="300" height="500" align="center">
+
+            <tr>
+
+            <td height="50" colspan="4"
+            align="center"><b>Mosaico</b></td>
+            </tr>
+
+
+
+            <tr>
+
+            <td colspan="2"></td>
+            <td></td>
+            <td rowspan="2"></td>
+            </tr>
+
+            <tr>
+
+            <td></td>
+            <td rowspan="3"></td>
+            <td></td>
+
+            </tr>
+
+            <tr>
+            <td></td>
+            <td colspan="2"></td>
+            </tr>
+
+            <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            </tr>
+        </table>
+
+        <h1 align="center">Ejercicio 4</h1>
+        
+        <div style="margin: auto; width: fit-content; margin-top: 30px; margin-bottom: 30px; text-align: center;">
+            <table style="border-collapse: collapse; margin: auto;">
+                <tr style="height: 150px;">
+                    <td><a href="triangulo.html"><img src="triangulo.png" alt="Triángulo" style="width: 100px;"></a></td>
+                    <td><a href="circulo.html"><img src="circulo.png" alt="Círculo" style="width: 100px;"></a></td>
+                    <td><a href="aspa.html"><img src="aspa.png" alt="Aspa" style="width: 100px;"></a></td>
+                    <td><a href="cuadrado.html"><img src="cuadrado.png" alt="Cuadrado" style="width: 100px;"></a></td>
+                </tr>
+            </table>
+        </div>
+
+        <h1 align="center">Ejercicio 5</h1>
+        
+        <div style="margin: auto; width: fit-content; margin-top: 30px; margin-bottom: 30px;">
+            <h2 align="center">Formulario de alta de usuario</h2>
+            
+            <form>
+                <table border="1">
+                    <tr>
+                        <td style="padding: 10px;" colspan="4">Identificador de nuevo usuario:
+                            <input type="text" name="usuario" value="usu_012345" size="25">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px;" colspan="2"><label>Nombre:</label>
+                            <input type="text" name="nombre" size="18">
+                        </td>
+                        <td style="padding: 10px;" colspan="2"><label>Apellido:</label>
+                            <input type="text" name="apellido" size="18"></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px;" colspan="2"><label>Contraseña:</label>
+                            <input type="password" name="password" size="18"></td>
+                        <td style="padding: 10px;" colspan="2"><label>Confirmar contraseña:</label>
+                            <input type="password" name="password2" size="18">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px;" colspan="4"><label>E-mail:</label>
+                            <input type="email" name="email" size="35">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px;"><label>Sexo:</label></td>
+                        <td colspan="3" style="padding: 10px;">
+                            <input type="radio" name="sexo" value="Varón"> Varón &nbsp;
+                            <input type="radio" name="sexo" value="Mujer"> Mujer
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px;"><label>Aficiones:</label></td>
+                        <td colspan="3" style="padding: 10px;">
+                            <input type="checkbox" name="aficion" value="Deporte"> Deporte<br>
+                            <input type="checkbox" name="aficion" value="Lectura"> Lectura<br>
+                            <input type="checkbox" name="aficion" value="Cine"> Cine
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px;"><label>País:</label></td>
+                        <td colspan="3" style="padding: 10px;">
+                            <select name="pais">
+                                <option>Francia</option>
+                                <option>España</option>
+                                <option>Portugal</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px;"><label>Colores favoritos:</label></td>
+                        <td colspan="3" style="padding: 10px;">
+                            <select name="colores" multiple size="3" style="width: 130px;">
+                                <option>Rojo</option>
+                                <option>Verde</option>
+                                <option>Azul</option>
+                            </select>
+                        </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px;"><label>Subir su foto:</label></td>
+                            <td colspan="3" style="padding: 10px;"><input type="file" name="foto"></td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px; vertical-align: top;"><label>Comentarios personales:</label></td>
+                            <td colspan="3" style="padding: 10px;"><textarea name="comentarios" cols="40" rows="4"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="padding: 15px; text-align: center;">
+                                <button type="reset" style="padding: 5px 20px; margin-right: 30px;">Resetear</button>
+                            </td>
+                            <td colspan="2" style="padding: 15px; text-align: center;">
+                                <button type="submit" style="padding: 5px 20px;">Enviar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" style="padding: 10px; text-align: center; border-top: 1px solid black;">
+                                <small style="border: 2px solid black;">Modificar datos del usuario</small>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+            <h1 align="center">Ejercicio 6</h1>
+        
+        <div style="margin: auto; width: fit-content; margin-top: 30px; margin-bottom: 30px;">
+            <form >
+                <fieldset style="border: 1px solid black; padding: 15px;">
+                    <legend style="border: 1px solid black; padding: 5px;"><b>Datos personales</b></legend>
+                    
+                    <table style="width: 100%;">
+                        <tr>
+                            <td style="padding: 10px;"><label for="usuario" accesskey="u">Usuario:</label></td>
+                            <td style="padding: 10px;"><input type="text" id="usuario" name="usuario" size="20" maxlength="12" tabindex="1"></td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px;"><label for="password" accesskey="c">Contraseña:</label></td>
+                            <td style="padding: 10px;"><input type="password" id="password" name="password" size="12" maxlength="12" tabindex="2"></td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px;"><label for="servicio" accesskey="s">Servicio:</label></td>
+                            <td style="padding: 10px;">
+                                <select id="servicio" name="servicio" tabindex="3">
+                                    <option value="http">http</option>
+                                    <option value="ftp" selected>ftp</option>
+                                    <option value="file">file</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="padding: 20px; text-align: center;">
+                                <button type="submit" tabindex="4" accesskey="e" ><img src="submit.png" alt="" width="90" height="90"></button>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+        </div>
+        
+        <h1 align="center">Ejercicio 7</h1>
+        <div style="margin: auto; width: fit-content;">
+            <h2 id="inicio" style="text-align:center;">Índice de contenidos</h2>
+            <ul>
+                <li><a href="#seccion1">Sección 1 – Introducción</a></li>
+                <li><a href="#seccion2">Sección 2 – Historia</a></li>
+                <li><a href="#seccion3">Sección 3 – Tecnología</a></li>
+            </ul>
+
+            <h3 id="seccion1">Sección 1 – Introducción</h3>
+            <p>La informática, es el área de la ciencia que se encarga de estudiar la administración de métodos, técnicas y procesos con el fin de almacenar, procesar y transmitir información y datos en formato digital. La informática abarca desde disciplinas teóricas (como algoritmos, teoría de la computación y teoría de la información) hasta disciplinas prácticas (incluido el diseño y la implementación de hardware y software). La informática generalmente se considera un área de investigación académica y distinta de la programación informática.</p>
+            <p><a href="#inicio">Ir al índice</a></p>
+
+            <h3 id="seccion2">Sección 2 – Historia</h3>
+            <p>En el siglo XIX, Charles Babbage diseñó la máquina analítica, considerada el primer concepto de computadora programable, con ideas de memoria y procesamiento.  Ada Lovelace, colaboradora de Babbage, escribió lo que se considera el primer algoritmo destinado a ser procesado por una máquina, convirtiéndose en la primera programadora.  Aunque la máquina nunca se construyó en su tiempo, sus diseños influyeron profundamente en la evolución de la computación. 
+
+La Segunda Guerra Mundial marcó un punto de inflexión: se desarrollaron las primeras computadoras electrónicas, como la ENIAC (Estados Unidos) y la Colossus (Reino Unido), usadas para cálculos balísticos y descifrado de códigos.  Esto dio origen a la era moderna de la informática, con el desarrollo de generaciones de computadoras basadas en válvulas, transistores, circuitos integrados y microprocesadores. 
+
+En la década de 1970, surgieron ARPANET (prototipo de Internet), el lenguaje BASIC, y los primeros microprocesadores.  La década de 1980 vio el auge de los ordenadores personales (Apple II, IBM PC), mientras que en 1990 se creó la World Wide Web, revolucionando la forma en que accedemos a la información.  Hoy, la informática continúa avanzando con la inteligencia artificial, la computación cuántica y la nanotecnología. </p>
+            <p><a href="#inicio">Ir al índice</a></p>
+
+            <h3 id="seccion3">Sección 3 – Tecnología</h3>
+            <p>La Tecnología de la Información (TI), esta enrelazada con la informatica, se refiere al conjunto de herramientas, recursos, sistemas y procesos utilizados para crear, almacenar, procesar y transmitir información.  Abarca hardware, software, redes, periféricos y servicios computacionales, y es fundamental en empresas y organizaciones para mejorar la eficiencia, la productividad y la toma de decisiones. Como se ha dicho anteriormente, estos términos se solapan mucho, especialmente con el auge de lo digital, que integra tecnologías como la nube, el análisis de datos, la inteligencia artificial y la Internet de las Cosas (IoT), transformando no solo los sistemas informáticos, sino también los modelos de negocio. </p>
+            <p><a href="#inicio">Ir al índice</a></p>
+        </div>
+
+        <h1 align="center">Ejercicio 8</h1>
+        
+        <div style="margin: auto; width: fit-content;">
+            <table style="border-collapse: collapse;">
+                <tr>
+                    <td colspan="2" style="padding: 10px; font-weight: bold; text-align: center;">Hansel y Gretel</td>
+                </tr>
+                <tr>
+                    <td style="vertical-align: top; padding: 10px; width: 120px;">
+                        <ul>
+                            <li><a href="capitulo1.html">Capítulo 1</a></li>
+                            <li><a href="capitulo2.html">Capítulo 2</a></li>
+                            <li><a href="capitulo3.html">Capítulo 3</a></li>
+                        </ul>
+                    </td>
+
+                </tr>
+            </table>
+        </div>
+
+        </div>
+
+        <h1 align="center">Ejercicio 9</h1>
+        <p style="margin:20px; text-align:center;">Inserto el diseño de marcos aquí mediante un <b>enlaze</b>, abrelo <a href="marcos.html">aquí</a> directamente.</p>
+
+    </body>
+</html>
