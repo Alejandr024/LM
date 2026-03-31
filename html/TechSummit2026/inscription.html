@@ -29,132 +29,121 @@
                 <form action="#" method="post">
 
                     <fieldset>
-                        <legend>
-                            <h2>Datos personales</h2>
-                            <label for="name">Nombre completo:</label>
-                            <input type="text" id="name" name="name" required>
-                            <br> <br>
-                            <label for="email">Correo electrónico:</label>
-                            <input type="email" id="email" name="email" required>
-                            <br> <br>
-                            <label for="phone">Teléfono:</label>
-                            <input type="tel" id="phone" name="phone" required>
-                            <br> <br>
-                            <label for="date">Fecha de nacimiento:</label>
-                            <input type="date" id="date" name="date" required min="1900-01-01" max="2026-12-31">
-                        </legend>
+                        <legend>Datos personales</legend>
+                        <label for="name">Nombre completo:</label>
+                        <input type="text" id="name" name="name" placeholder="Ej: Alejandro" minlength="3" maxlength="100" required>
+                        <br> <br>
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" placeholder="Ej: alejandro123@gmail.com" required>
+                        <br> <br>
+                        <label for="phone">Teléfono:</label>
+                        <input type="tel" id="phone" name="phone" pattern="^\d{3}-\d{3}-\d{4}$" placeholder="Ej: 123-456-7890" required>
+                        <br> <br>
+                        <label for="date">Fecha de nacimiento:</label>
+                        <input type="date" id="date" name="date" required min="1910-01-01" max="2026-12-31">
                     </fieldset>
 
                     <fieldset>
-                        <legend>
-                            <h2>Datos profesionales</h2>
-                            <label for="company">Empresa:</label>
-                            <input type="text" id="company" name="company">
-                            <br> <br>
-                            <label for="positions">Cargo:</label>
-                            <input type="text" id="positions" name="positions" list="positions_list">
-                            <datalist id="positions_list">
-                                <option value="developer">Developer</option>
-                                <option value="designer">Designer</option>
-                                <option value="manager">Manager</option>
-                                <option value="cto">CTO</option>
-                                <option value="student">Student</option>
-                            </datalist>
-                            <br> <br>
-                            <label for="years">Años de experiencia:</label>
-                            <input type="number" id="years" name="years" min="0" max="50">
-                            <br> <br>
-                            <label for="level-tecnologico">Nivel tecnológico:</label>
-                            <input type="range" id="level-tecnologico" min="0" max="10" name="level-tecnologico" step="1">
-                            <br> <br>
-                            <label for="tecnologies">Tecnologías:</label>
-                            <select name="tecnologies" id="tecnologies">
-                                <optgroup label="Frontend">
-                                    <option value="html">HTML</option>
-                                    <option value="css">CSS</option>
-                                    <option value="javascript">JavaScript</option>
-                                    <option value="react">React</option>
-                                </optgroup>
-                                <optgroup label="Backend">
-                                    <option value="java">Java</option>
-                                    <option value="python">Python</option>
-                                    <option value="nodejs">Node.js</option>
-                                    <option value="php">PHP</option>
-                                </optgroup>
-                            </select>
-                        </legend>
+                        <legend>Datos profesionales</legend>
+                        <label for="company">Empresa:</label>
+                        <input type="text" id="company" name="company">
+                        <br> <br>
+                        <label for="positions">Cargo:</label>
+                        <input type="text" id="positions" name="positions" list="positions_list">
+                        <datalist id="positions_list">
+                            <option value="developer">Developer</option>
+                            <option value="designer">Designer</option>
+                            <option value="manager">Manager</option>
+                            <option value="cto">CTO</option>
+                            <option value="student">Student</option>
+                        </datalist>
+                        <br> <br>
+                        <label for="years">Años de experiencia:</label>
+                        <input type="number" id="years" name="years" min="0" max="50">
+                        <br> <br>
+                        <label for="level-tecnologico">Nivel tecnológico:</label>
+                        <input type="range" id="level-tecnologico" min="0" max="10" name="level-tecnologico" step="1">
+                        <br> <br>
+                        <label for="tecnologies">Tecnologías:</label>
+                        <select name="tecnologies" id="tecnologies">
+                            <option value="" disabled selected>Selecciona una tecnología</option>
+                            <optgroup label="Frontend">
+                                <option value="html">HTML</option>
+                                <option value="css">CSS</option>
+                                <option value="javascript">JavaScript</option>
+                                <option value="react">React</option>
+                            </optgroup>
+                            <optgroup label="Backend">
+                                <option value="java">Java</option>
+                                <option value="python">Python</option>
+                                <option value="nodejs">Node.js</option>
+                                <option value="php">PHP</option>
+                            </optgroup>
+                        </select>
                     </fieldset>
 
                     <fieldset>
-                        <legend>
-                            <h2>Preferencias de asistencia</h2>
-                            <label for="ticket">Tipo de entrada:</label>
-                            <input type="radio" id="standard" name="ticket" value="ticket1" required>
-                            <label for="standard">Estandar (50€)</label>
-                            <input type="radio" id="premium" name="ticket" value="ticket2" required>
-                            <label for="premium">Premium (120€)</label>
-                            <input type="radio" id="vip" name="ticket" value="ticket3" required>
-                            <label for="vip">VIP (250€)</label>
-                            <br> <br>
-                            <label for="checkboxes">Talleres:</label>
-                            <input type="checkbox" id="workshop1" name="workshop1" value="workshop1">
-                            <label for="workshop1">Taller de IA</label>
-                            <input type="checkbox" id="workshop2" name="workshop2" value="workshop2">
-                            <label for="workshop2">Taller de Cloud</label>
-                            <input type="checkbox" id="workshop3" name="workshop3" value="workshop3">
-                            <label for="workshop3">Taller de Seguridad</label>
-                            <input type="checkbox" id="workshop4" name="workshop4" value="workshop4">
-                            <label for="workshop4">Taller de DevOps</label>
-                            <br> <br>
-                            <label for="attendance">Dias de asistencia:</label>
-                            <select name="attendance" id="attendance">
-                                <option value="day1">Solo día 1</option>
-                                <option value="day2">Solo día 2</option>
-                                <option value="day3">Solo día 3</option>
-                                <option value="all">Los 3 días</option>
-                            </select>
-                            <br> <br>
-                            <label for="referral">¿Cómo nos conociste?</label>
-                            <select name="referral" id="referral">
-                                <option value="social_media">Redes sociales</option>
-                                <option value="websearch">Búsqueda web</option>
-                                <option value="recommendation">Recomendación</option>
-                                <option value="other">Otro</option>
-                            </select>
-                            <br> <br>
-                            <label for="comments">Comentarios:</label>
-                            <textarea name="comments" id="comments" rows="4" cols="50"
-                                placeholder="¿Tienes algún comentario o pregunta?"></textarea>
-                            <br> <br>
-                            <label for="termns"><a href="termns.html" target="_blank">Términos y condiciones</a>:</label>
-                            <input type="checkbox" id="termns" name="termns" value="termns" required>
-                            Aceptar términos y condiciones
-                            </label>
-                        </legend>
+                        <legend>Preferencias de asistencia</legend>
+                        <span id="ticket">Tipo de entrada:</span>
+                        <input type="radio" id="standard" name="ticket" value="ticket1" required>
+                        <label for="standard">Estandar (50€)</label>
+                        <input type="radio" id="premium" name="ticket" value="ticket2">
+                        <label for="premium">Premium (120€)</label>
+                        <input type="radio" id="vip" name="ticket" value="ticket3">
+                        <label for="vip">VIP (250€)</label>
+                        <br> <br>
+                        <span id="checkboxes">Talleres:</span>
+                        <input type="checkbox" id="workshop1" name="workshop1" value="workshop1">
+                        <label for="workshop1">Taller de IA</label>
+                        <input type="checkbox" id="workshop2" name="workshop2" value="workshop2">
+                        <label for="workshop2">Taller de Cloud</label>
+                        <input type="checkbox" id="workshop3" name="workshop3" value="workshop3">
+                        <label for="workshop3">Taller de Seguridad</label>
+                        <input type="checkbox" id="workshop4" name="workshop4" value="workshop4">
+                        <label for="workshop4">Taller de DevOps</label>
+                        <br> <br>
+                        <label for="attendance">Días de asistencia:</label>
+                        <select name="attendance" id="attendance">
+                            <option value="" disabled selected>Selecciona los días</option><!--Es como un placeholder, para mostrar un mensaje de ayuda -->
+                            <option value="day1">Solo día 1</option>
+                            <option value="day2">Solo día 2</option>
+                            <option value="day3">Solo día 3</option>
+                            <option value="all">Los 3 días</option>
+                        </select>
+                        <br> <br>
+                        <label for="referral">¿Cómo nos conociste?</label>
+                        <select name="referral" id="referral">
+                            <option value="" disabled selected>Selecciona una opción</option> <!--Es como un placeholder-->
+                            <option value="social_media">Redes sociales</option>
+                            <option value="websearch">Búsqueda web</option>
+                            <option value="recommendation">Recomendación</option>
+                            <option value="other">Otro</option>
+                        </select>
+                        <br> <br>
+                        <label for="comments">Comentarios:</label>
+                        <textarea name="comments" id="comments" rows="4" cols="50"
+                            placeholder="¿Tienes algún comentario o pregunta?"></textarea>
+                        <br> <br>
+                        <input type="checkbox" id="termns" name="termns" value="termns" required>
+                        <label for="termns"><a href="termns.html" target="_blank">Acepto los términos y condiciones</a></label>
                     </fieldset>
 
                     <fieldset>
-                        <legend>
-                            <h2>Subida y envio</h2>
-                            <label for="profile">Foto de perfil</label>
-                            <input type="file" id="profile" name="profile" accept="image/*">
-                            <br> <br>
-                            <label for="passwd">Contraseña:</label>
-                            <input type="password" id="passwd" name="passwd" required>
-                            <br> <br>
-                            <label for="field-hidden">Campo oculto</label>
-                            <input type="hidden" id="field-hidden" name="field-hidden" value="hidden-value">
-                            <br> <br>
-                            <button type="submit">Completar inscripción</button>
-                            <br> <br>
-                            <button type="reset">Limpiar formulario</button>
-                        </legend>
+                        <legend>Subida y envío</legend>
+                        <label for="profile">Foto de perfil</label>
+                        <input type="file" id="profile" name="profile" accept="image/*">
+                        <br><br>
+                        <label for="passwd">Contraseña:</label>
+                        <input type="password" id="passwd" name="passwd" required>
+                        <br><br>
+                        <input type="hidden" id="field-hidden" name="formulaeio_version" value="1.0">
+                        <button type="submit">Completar inscripción</button>
+                        <button type="reset">Limpiar formulario</button>
                     </fieldset>
 
                 </form>
             </section>
         </main>
-        <br>
         <footer>
             <small>&copy; 2026 TechSummit. Todos los derechos reservados.</small>
             <a href="#">Política de Privacidad</a>

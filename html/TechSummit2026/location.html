@@ -1,46 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechSummit 2026 - Ubicación</title>
-</head>
-<body>
-    <!-- Parte 6. Ubicación y multimedia-->
-    <header>
-        <h1>TechSummit 2026 - Ubicación</h1>
-       <nav>
-            <ul>
-                <li><a href="tecsummit.html">Inicio</a></li>
-                <li><a href="evento.html">Sobre el evento</a></li>
-                <li><a href="ponentes.html">Ponentes</a></li>
-                <li><a href="programs.html">Programa</a></li>
-                <li><a href="partners.html">Patrocinadores</a></li>
-                <li><a href="inscription.html">Inscripción</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="location">
-            <h2>Ubicación</h2>
-            <address>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.58762663528!2d-3.6163537000000003!3d40.4622632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422e514edf02d3%3A0xe0971ba5c464c797!2sPalacio%20Municipal%20IFEMA%20MADRID!5e0!3m2!1ses-419!2ses!4v1774707513985!5m2!1ses-419!2ses" width="600" height="400" loading="lazy" title="Accesibilidad" alt="Ubicación del evento"></iframe>
-            </address>
-            <video src="video/videoplayback.mp4" controls width="640" preload="metadata" alt="Video de la ubicación">video en .mp4</video>
-            <video src="video/videoplayback.webm" controls width="640" preload="metadata" alt="Video de la ubicación"> Video en .webm</video>
-            <track kind="subtitles" srclang="es" label="Español"></track>
-        </section>
-
-    </main>
-    <br>
-    <footer>
-        <small>&copy; 2026 TechSummit. Todos los derechos reservados.</small>
-        <a href="#">Política de Privacidad</a>
-        <a href="#">Aviso Legal</a>
-        <a href="mailto:info@techsummit2026.com">Contacto</a>
-        <a href="tel:+34912345678">Teléfono</a>
-        <small>Hecho con &lt;3 desde Madrid.</small>
-    </footer>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TechSummit 2026 - Ubicación</title>
+    </head>
+    <body>
+        <!-- Parte 6. Ubicación y multimedia-->
+        <header>
+            <h1>TechSummit 2026 - Ubicación</h1>
+            <nav>
+                <ul>
+                    <li><a href="tecsummit.html">Inicio</a></li>
+                    <li><a href="evento.html">Sobre el evento</a></li>
+                    <li><a href="ponentes.html">Ponentes</a></li>
+                    <li><a href="programs.html">Programa</a></li>
+                    <li><a href="partners.html">Patrocinadores</a></li>
+                    <li><a href="inscription.html">Inscripción</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="location">
+                <h2>Ubicación</h2>
+                <address>
+                    TechSummit 2026<br>
+                    Palacio Municipal IFEMA Madrid<br>
+                    Av. del Partenón, 5, 28042 Madrid, España
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.58762663528!2d-3.6163537000000003!3d40.4622632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422e514edf02d3%3A0xe0971ba5c464c797!2sPalacio%20Municipal%20IFEMA%20MADRID!5e0!3m2!1ses-419!2ses!4v1774707513985!5m2!1ses-419!2ses" width="600" height="400" loading="lazy" title="Ubicación del evento"></iframe>
+                </address>
+                <video controls>
+                    <source src="video/videoplayback.mp4" type="video/mp4">
+                    <track kind="subtitles" srclang="es" label="Español" src="video/subtitulos_es.vtt">
+                </video>
+                <video controls width="350">
+                    <source src="video/videoplayback.webm" type="video/webm">
+                    <track kind="subtitles" srclang="es" label="Español" src="video/subtitulos_es.vtt">
+                </video>
+            </section>
+        </main>
+        <footer>
+            <small>&copy; 2026 TechSummit. Todos los derechos reservados.</small>
+            <a href="#">Política de Privacidad</a>
+            <a href="#">Aviso Legal</a>
+            <a href="mailto:info@techsummit2026.com">Contacto</a>
+            <a href="tel:+34912345678">Teléfono</a>
+            <small>Hecho con &lt;3 desde Madrid.</small>
+        </footer>
+    </body>
 </html>
