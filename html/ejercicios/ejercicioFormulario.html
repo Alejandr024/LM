@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario</title>
+    </head>
+
+    <body>
+
+        <h2>Inscripción</h2>
+        <form action="#" method="post">
+
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label for="name">Nombre de usuario:</label>
+                <input type="text" id="name" name="name" placeholder="Ej: Alejandro" minlength="3" maxlength="100" required>
+                <br> <br>
+                <label for="direccion">Direccion:</label>
+                <input type="text" id="direccion" name="direccion" placeholder="Ej: Calle Principal, 123" required>
+                <label for="bancario">Numero de cuenta bancaria:</label>
+                <input type="text" id="bancario" name="bancario" placeholder="Ej: ES12 1234 1234 12 1234567890" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Tarifa</legend>
+                <label for="tarifas">Tarifas</label>
+                <br>
+                <select name="tarifas">
+                    <option value="">Selecciona una tarifa</option>
+                    <option value="young">Tarifa Jóven</option>
+                    <option value="senior">Tarifa Sénior</option>
+                    <option value="superior">Tarifa Plana Superior</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Fecha</legend>
+                <label for="fecha">Fecha de comienzo del servicio:</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Notificaciones</legend>
+                <label for="sms">¿Notificaciones por SMS?</label>
+                <br>
+                <input type="radio" name="sms" value="Si">Si
+                <input type="radio" name="sms" value="No">No
+            </fieldset>
+            <br>
+            <button type="submit">Enviar formulario</button>
+            <button type="reset">Reiniciar formulario</button>
+        </form>
+    </body>
+
+</html>

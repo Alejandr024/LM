@@ -1,0 +1,88 @@
+body{
+    margin:0;
+    text-align: center;
+}
+
+h1{
+    color: navy;
+
+}
+
+div#calculadora{
+    margin: auto;
+    width: 25vw;
+    height: 25vw;
+    display: grid; /*Cambia a grid para organizar los elementos, divide en filas y columnas*/ 
+    grid-template-columns: 3fr 1fr; /* crea dos columnas, la primera ocupa 3 fracciones y la otra un 25% de anchura*/
+    grid-template-rows: 25% 75%; /* crea dos filas, la primera ocupa un 25% de altura y la otra un 75% de anchura*/
+    grid-template-areas: 
+    "pantalla pantalla"
+    "numbers operaciones";
+    border: 3px solid navy;
+}
+
+div#pantalla{
+    grid-area: pantalla;
+    border: 3px solid navy;
+    background: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p#resultado{
+    border: 2px solid green;
+    background-color: lightyellow;
+    width: 70%;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 10px;
+    text-align: right;
+}
+
+div#numbers{
+    grid-area: numbers;
+    grid-template-columns: repeat(3, auto); /* Crea tres columnas de ancho automático para los botones numéricos */
+    grid-template-rows: repeat(4, 1fr); /* Crea cuatro filas de alto igual para los botones numéricos */
+    padding: 2px; /* Agrega un espacio de 3px entre los botones */
+    display: grid; /* Cambia a grid para organizar los botones numéricos en filas y columnas */
+    background: lightyellow;
+    gap: 3px;
+}
+
+button{
+    border: 2px solid red;
+    font-size: 1.5em;
+}
+
+div#operaciones{
+    grid-area: operaciones;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr; /* Crea dos columnas de ancho igual para los botones de operaciones */
+    grid-template-rows: repeat(4, 1fr); /* Crea cuatro filas de alto igual para los botones de operaciones */
+    gap: 3px; /* Agrega un espacio de 3px entre los botones */
+    padding: 2px;
+    border-left: green 6px solid;
+    background: lightyellow;
+
+}
+
+div#operaciones button{
+    font-weight: bold;
+    color: navy;
+}
+
+button#igual{
+    grid-row: span 2; /* Hace que el botón "=" ocupe dos filas */
+}
+
+button#borrado{
+    grid-row: span 2; /* Hace que el botón "C" ocupe dos filas */
+}
+
+button#borrado:hover{
+    background: pink;
+}
+button#igual:hover{
+    background: lime;
+}

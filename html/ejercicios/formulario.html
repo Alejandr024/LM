@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejemplos formularios</title>
+    </head>
+    <body>
+        <h3>Datos personales</h3>
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" value="su nombre aqui" size="20" maxlength="20">
+            <br><br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" value="su apellido aqui" size="40" maxlength="50">
+            <br><br>
+            <label for="edad">Edad:</label>
+            <input type="number" name="edad" size="3" maxlength="2">
+            <br><br>
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" name="contrasena" size="20" maxlength="20">
+            <br><br>
+            <label for="curso">Curso:</label>
+            <input type="text" name="curso" size="30" maxlength="30">
+            <br><br>
+            <label for="interes">Interés:</label>
+            <br>
+            <input type="checkbox" name="check1" value="check1">Programación
+            <input type="checkbox" name="check2" value="check2">Politica
+            <input type="checkbox" name="check3" value="check3">Deportes <br>
+            <input type="checkbox" name="check4" value="check4">Música
+            <input type="checkbox" name="check5" value="check5">Salud
+            <input type="checkbox" name="check6" value="check6">Literatura
+            <br><br>
+            <hr>
+            <label for="color">Color favorito:</label>
+            <br>
+            <input type="radio" name="color" value="rojo"> Rojo
+            <input type="radio" name="color" value="verde"> Verde
+            <input type="radio" name="color" value="azul"> Azul
+            <br>
+            <label for="estacion">Estación favorita:</label>
+            <br>
+            <input type="radio" name="estacion" value="primavera"> Primavera
+            <input type="radio" name="estacion" value="verano"> Verano
+            <input type="radio" name="estacion" value="otoño"> Otoño
+            <input type="radio" name="estacion" value="invierno"> Invierno
+            <br>
+            <hr>
+            <label for="equipo">Barça o Madrid:</label>
+            <br>
+            <input type="button" value="Barça"> 
+            <input type="button" value="Madrid">
+            <br>
+            <label for="color">Color favorito:</label>
+            <br>
+            <input type="color">
+            <br>
+            <label for="fecha">Fecha de nacimiento:</label>
+            <br>
+            <input type="date">
+            <br>
+            <label for="email">Email:</label>
+            <br>
+            <input type="email">
+            <br>
+            <label for="archivo">Subir archivo:</label>
+            <br>
+            <input type="file" id="archivo">
+            <br>
+            <label for="oculto">Oculto:</label>
+            <br>
+            <input type="hidden" id="oculto">
+            <br>
+            <label for="imagen">Imagen:</label>
+            <br>
+            <input type="image" id="imagen" value="subir imagen" width="100" height="100">
+            <br>
+            <label for="mes_año">Mes y año de nacimiento:</label>
+            <br>
+            <input type="datetime-local" id="mes_año">
+            <br>
+            <label for="hora">Hora de graduación:</label>
+            <br>
+            <input type="time" id="hora">
+            <br>
+            <label for="ingresos">Ingresos:</label>
+            <br>
+            <input type="number" id="ingresos" step="1" min="0" max="1000000">
+            <br>
+            <label for="felicidad">Rango de felicidad:</label>
+            <br>
+            <input type="range" id="felicidad" min="0" max="100">
+            <br>
+            <label for="search">Buscar:</label>
+            <br>
+            <input type="search" id="search">
+            <br>
+            <label for="tlf">Teléfono:</label>
+            <br>
+            <input type="tel" id="tlf">
+            <br>
+            <label for="web">Sitio web:</label>
+            <br>
+            <input type="url" id="web">
+            <br>
+            <label for="week">Semana de nacimiento:</label>
+            <br>
+            <input type="week" id="week">
+            <br>
+            <label for="deporte">Deporte:</label>
+            <br>
+            <select name="deportes" id="deporte">
+                <option value="futbol">Fútbol</option>
+                <option value="baloncesto">Baloncesto</option>
+                <option value="tenis">Tenis</option>
+                <option value="natacion">Natación</option>
+                <option value="nother">No me interesa</option>
+            </select>
+            <br>
+            <label for="interes">Intereses:</label>
+            <br>
+            <select multiple>
+                <option value="lectura">Mascota</option>
+                <option value="cine">Literatura</option>
+                <option value="musica">Salud</option>
+                <option value="deporte">Videojuegos</option>
+            </select>
+            <br>
+            <label for="sucursales">Sucursales:</label>
+            <br>
+            <select name="aeropuerto" size="6">
+                <optgroup label="Tenerife">
+                    <option value="laguna">La Laguna</option>
+                    <option value="puerto">Puerto la Cruz</option>
+                    <option value="arona">Arona</option>
+                </optgroup>
+                <optgroup label="El hierro">
+                    <option value="valverde">Valverde</option>
+                    <option value="restinga">La Restinga</option>
+                </optgroup>
+                <optgroup label="La Gomera">
+                    <option value="san-sebastian">San Sebastián</option>
+                    <option value="vallehermoso">Vallehermoso</option>
+                </optgroup>
+                <optgroup label="La Palma">
+                    <option value="Mazo">Mazo</option>
+                    <option value="El paso">El paso</option>
+                    <option value="garafia">Garafía</option>
+                </optgroup>
+            </select>
+            <br>
+            
+            <hr>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </form>
+
+    </body>
+</html>
