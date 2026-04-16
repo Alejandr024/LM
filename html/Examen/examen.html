@@ -1,0 +1,252 @@
+<!DOCTYPE html><!--- Bloque A.1: La función que tiene el "DOCTYPE" es definir el tipo de página web que se está creando, indicando la versión de HTML. En este caso, la version es HTML 5.-->
+<html lang="es"><!-- Bloque A.3: En este apartado, es donde se define el idioma principal del documento.-->
+    <head>
+        <!--Bloque A.2: -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Alejandro Miguel Gómez González">
+        <title>TPV-Restaurante Demo</title>
+    </head>
+    <body>
+        <header>
+            <h1>Examen HTML, Alejandro Miguel Gómez González</h1>
+            <nav>
+                <a href="#article">Inicio</a>
+                <br>
+                <a href="#form">Formulario</a>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h2>Hola</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores temporibus aperiam fugiat quos cupiditate dicta quaerat praesentium aspernatur voluptate tempore! Commodi eius possimus incidunt fuga ipsum ut ducimus omnis earum.</p>
+            </section>
+            <section>
+                <h2>Adiós</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores temporibus aperiam fugiat quos cupiditate dicta quaerat praesentium aspernatur voluptate tempore! Commodi eius possimus incidunt fuga ipsum ut ducimus omnis earum.</p>
+            </section>
+        </main>
+        <!--BLoque B-->
+        <article id="article">
+            <h3>Pantalla de acceso</h3>
+            <!--Bloque B1.1: -->
+            <!--Bloque F-->
+            
+            <figure>
+                <img src="logo_completa_correcta_examen.jpg" alt="logo_examen" width="120" height="80">
+            </figure>
+            <figcaption>Logotipo Restaurante Demo</figcaption>
+            <br>
+            <time datetime="ISO 8601">23 de marzo de 2026</time>
+            <br>
+            <address>
+                Restaurante Demo <br>
+                <a href="joseantoniorivero@restaurante-demo-formacion.example">Consultas</a>
+            </address>
+            <br>
+            <!--Bloque B1.2: -->
+            <label for="pin">PIN</label>
+            <br>
+            <input type="password" name="pin" maxlength="4" id="pin" placeholder="****">
+            <!--Bloque B.2: El efecto que tiene el atributo "hidden" es ocultar el párrafo, lo hace para que el usuario no pueda ver dichos datos, o datos de otras páginas o usuarios.-->
+            <p id="mensaje-error" hidden>PIN incorrecto</p>
+
+            <!--BLoque B3: -->
+            <div id="numeros">
+                <button type="button" name="digito" value="1">1</button>
+                <button type="button" name="digito" value="2">2</button>
+                <button type="button" name="digito" value="3">3</button>
+                <button type="button" name="digito" value="4">4</button>
+                <button type="button" name="digito" value="5">5</button>
+                <button type="button" name="digito" value="6">6</button>
+                <button type="button" name="digito" value="7">7</button>
+                <button type="button" name="digito" value="8">8</button>
+                <button type="button" name="digito" value="9">9</button>
+                <button type="reset">Borrar</button>
+                <button type="button" value="0">0</button>
+                <!--Bloque B1.3: -->
+                <button type="button">Entrar</button>
+        </div>
+        <br>
+        <!--Bloque C-->
+        <table id="tabla_ticket" border="1">
+            <caption>Ticket nº 1042</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Producto</th>
+                    <th scope="col">Cant</th>
+                    <th scope="col">P.unit</th>
+                    <th scope="col">Importe</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Coca-Cola</th>
+                    <th scope="row">2</th>
+                    <th scope="row">0,50</th>
+                    <th scope="row">1€</th>
+                </tr>
+                <tr>
+                    <th scope="row">Pringles</th>
+                    <th scope="row">4</th>
+                    <th scope="row">1,25</th>
+                    <th scope="row">5€</th>
+                </tr>
+                <tr>
+                    <th colspan="3">Total</th>
+                    <th>6€</th>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="4">IVA incluido</th>
+                </tr>
+            </tfoot>
+        </table>
+        <!--Bloque D-->
+        <ul>
+            <li>Sala
+                <ol>
+                    <li>M1
+                        <ul>
+                            <li>Libre</li>
+                            <li>Ocupada</li>
+                            <li>Cuenta pedida</li>
+                        </ul>
+                    </li>
+                    <li>M2
+                        <ul>
+                            <li>Libre</li>
+                            <li>Ocupada</li>
+                            <li>Cuenta pedida</li>
+                        </ul>                        
+                    </li>
+                    <li>M3
+                        <ul>
+                            <li>Libre</li>
+                            <li>Ocupada</li>
+                            <li>Cuenta pedida</li>
+                        </ul>
+                    </li>
+                </ol>
+            </li>
+            <li>Terraza
+                <ol>
+                    <li>T1
+                        <ul>
+                            <li>Libre</li>
+                            <li>Ocupada</li>
+                            <li>Cuenta pedida</li>
+                        </ul>
+                    </li>
+                    <li>T2
+                        <ul>
+                            <li>Libre</li>
+                            <li>Ocupada</li>
+                            <li>Cuenta pedida</li>
+                        </ul>
+                    </li>
+                    <li>T3
+                        <ul>
+                            <li>Libre</li>
+                            <li>Ocupada</li>
+                            <li>Cuenta pedida</li>
+                        </ul>
+                    </li>
+                </ol>
+
+            </li>
+        </ul>
+        
+        <!--BLoque E-->
+        <dl>
+            Términos del TPV
+            <br> <br>
+            <dt>Ticket
+                <dd>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt porro blanditiis sit quisquam vel atque at.
+                </dd>
+            </dt>
+            <dt>Comanda
+                <dd>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt porro blanditiis sit quisquam vel atque at.                    
+                </dd>
+            </dt>
+            <dt>IVA
+                <dd>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt porro blanditiis sit quisquam vel atque at.
+                </dd>
+            </dt>
+            <blockquote cite="Manual de procedimiento, 2026.">Me gustan las galletas</blockquote>
+        </dl>
+
+        <!--Bloque G-->
+        <nav>
+            <ul>
+                <li><a href="#mesas">Mapa de mesas</a></li>
+                <li><a href="admin.html">Administración</a></li>
+                <li><a href="http://www.ejemplo-tpv-formacion.example" target="_blank" rel="noopener noreferrer">Sitio web</a></li>
+            </ul>
+        </nav>
+
+        <!--Bloque H-->
+
+        <details>
+            <summary>Condiciones de uso del TPV
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae laboriosam reiciendis temporibus ullam cupiditate quod, amet rerum, asperiores veniam pariatur provident vero veritatis tempore illo ipsam vel magnam eveniet ad.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod autem unde consequuntur sint iusto neque, adipisci architecto dolor labore necessitatibus ducimus, repudiandae deleniti tenetur provident? Culpa provident architecto deserunt quod!</p>
+            </summary>
+            <aside>
+                <h2>Aviso</h2>
+                <p>Cierre de caja</p>
+            </aside>
+        </details>
+
+        <!--Bloque I
+        Correccion errores apartado "I":
+        Primera línea: parrafo con "h3", uso indebido de etiquetas. el h3 no debe de estar dentro del parrafo, pues es un título. 
+        Línea 4: span mal anidado. Se vislumbra que, el cierre del span, esta fuera de la etiqueta "li", cuando tiene que estar dentro de la misma.
+        Línea 6, el "alt" no tiene nada denro ni tiene comillas, atributo mal aplicado. Debe de tener una descripción dentro o, al menos, tener comillas vacías.
+        -->
+        <!--Bloque J-->
+        <h2>Formulario</h2>
+        <form action="/api/reservas" method="post" id="form">
+            <fieldset>
+                <legend>Datos del cliente</legend>
+                <label for="name">Nombre del Cliente:</label>
+            <input type="text" name="name" id="name" required>
+            <br>
+            <label for="comensales">Numero de comensales</label>
+            <input type="number" name="comensales" id="comensales" min="1" max="20">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Reserva</legend>
+                <label for="date">Fecha</label>
+            <input type="date" name="date" id="date">
+            <br>
+            <label for="foods">Hora de comida</label>
+            <select name="foods" id="foods">
+                            <option value="" disabled selected>Selecciona una hora</option>
+                            <optgroup label="Comida">
+                                <option value="una">13:00</option>
+                                <option value="dos">14:00</option>                           
+                            </optgroup>
+                            <optgroup label="Cena">
+                                <option value="nueve">21:00</option>
+                                <option value="python">22:00<option>
+                            </optgroup>
+            </select>
+            <br>
+            <label for="alergies">Alergias</label>
+            <textarea name="alergies" id="alergies" rows="4" cols="50"></textarea>
+            </fieldset>
+            <br>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpiar formulario</button>
+        </form>
+
+    </article>
+    </body>
+</html>
