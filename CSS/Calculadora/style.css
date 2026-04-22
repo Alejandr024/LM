@@ -13,10 +13,10 @@ div#calculadora{
     width: 25vw;
     height: 25vw;
     display: grid; /*Cambia a grid para organizar los elementos, divide en filas y columnas*/ 
-    grid-template-columns: 3fr 1fr; /* crea dos columnas, la primera ocupa 3 fracciones y la otra un 25% de anchura*/
-    grid-template-rows: 25% 75%; /* crea dos filas, la primera ocupa un 25% de altura y la otra un 75% de anchura*/
-    grid-template-areas: 
-    "pantalla pantalla"
+    grid-template-columns: 3fr 1fr; /* crea dos columnas*/
+    grid-template-rows: 25% 75%; /* crea dos filas*/
+    grid-template-areas:/*Orden en como aparece los botones y pantallas*/ 
+    "pantalla pantalla" 
     "numbers operaciones";
     border: 3px solid navy;
 }
@@ -44,8 +44,8 @@ div#numbers{
     grid-area: numbers;
     grid-template-columns: repeat(3, auto); /* Crea tres columnas de ancho automático para los botones numéricos */
     grid-template-rows: repeat(4, 1fr); /* Crea cuatro filas de alto igual para los botones numéricos */
-    padding: 2px; /* Agrega un espacio de 3px entre los botones */
-    display: grid; /* Cambia a grid para organizar los botones numéricos en filas y columnas */
+    padding: 2px;
+    display: grid;
     background: lightyellow;
     gap: 3px;
 }
