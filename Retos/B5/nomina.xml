@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="nomina.xsl"?>
+<nomina xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nomina.xsd">
+    <empleado id="E001">
+    <nombre>Laura Martínez</nombre>
+    <puesto>Administrativa</puesto>
+    <salario_base>1600.00</salario_base>
+    <transporte>100.00</transporte>
+    <complemento_variable>
+    <tipo>Productividad</tipo>
+    <cantidad>150.00</cantidad>
+    </complemento_variable>
+    <retenciones>
+    <seguridad_social>120.00</seguridad_social>
+    <irpf>180.00</irpf>
+    </retenciones>
+    <salario_bruto>1850.00</salario_bruto>
+    <salario_neto>1550.00</salario_neto>
+    </empleado>
+</nomina>
