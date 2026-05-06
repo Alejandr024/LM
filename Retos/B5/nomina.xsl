@@ -10,7 +10,7 @@
                 <div>
                     <h2 style="margin-top:0;">Nómina de Empleado</h2>
                     <table>
-                        <tr>
+                        <tr class="header">
                             <td>ID</td>
                             <td>Nombre</td>
                             <td>Puesto</td>
@@ -19,13 +19,23 @@
                             <td>Cantidad Complemento</td>
                             <td>Seguridad Social (€)</td>
                             <td>IRPF (€)</td>
-                            <td>Salario Brtuo (€)</td>
+                            <td>Salario Bruto (€)</td>
                             <td>Salario Neto (€)</td>
                         </tr>
+                        <xsl:for-each select="nomina/empleado">
                         <tr>
-                            <td><xsl:value-of select="persona/nombre"/></td>
-                            <td><xsl:value-of select="persona/edad"/></td>
+                            <td><xsl:value-of select="@id"/></td>
+                            <td><xsl:value-of select="nombre"/></td>
+                            <td><xsl:value-of select="puesto"/></td>
+                            <td><xsl:value-of select="salario_base"/></td>
+                            <td><xsl:value-of select="complemento_variable/tipo"/></td>
+                            <td><xsl:value-of select="complemento_variable/cantidad"/></td>
+                            <td><xsl:value-of select="retenciones/seguridad_social"/></td>
+                            <td><xsl:value-of select="retenciones/irpf"/></td>
+                            <td><xsl:value-of select="salario_bruto"/></td>
+                            <td><xsl:value-of select="salario_neto"/></td>
                         </tr>
+                        </xsl:for-each>
                     </table>
                 </div>
             </body>
