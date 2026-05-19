@@ -1,0 +1,24 @@
+body{
+    background-color: #e7e7e7;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+table#nomina1{
+    margin: 0 auto;
+    text-align: center;
+}
+
+table#nomina1 thead th{ 
+    background-color: #0d8eb6;
+    color: white;
+    padding: 5px;
+}
+
+tbody#datos_nomina1 td{ 
+    background: white;
+    padding: 5px;
+}

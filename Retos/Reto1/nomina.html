@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="nomina.css">
+        <title>Nomina</title>
+    </head>
+    <body>
+        <h1>Nómina del Empleado</h1>
+        <table id="nomina1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Puesto</th>
+                    <th>Salario Base (€)</th>
+                    <th>Transporte (€)</th>
+                    <th>Complemento Variable</th>
+                    <th>Importe Complemento (€)</th>
+                    <th>Seguridad Social (€)</th>
+                    <th>IRPF (€)</th>
+                    <th>Salario Bruto (€)</th>
+                    <th>Salario Neto (€)</th>
+                </tr>
+            </thead>
+            <tbody id="datos_nomina1">
+            </tbody>
+        </table>
+
+        <script>
+            fetch("Nomina.json")
+            .then(response => response.json())
+            .then(data => {
+                const n = data.nomina;
+                const tbody = document.getElementById('datos_nomina1');
+                const fila = document.createElement('tr');
+                fila.innerHTML = `
+                <td>${n.id}</td>
+                <td>${n.empleado.nombre}</td>
+                <td>${n.empleado.puesto}</td>
+                <td>${n.salario_base.toFixed(2)}</td>
+                <td>${n.transporte.toFixed(2)}</td>
+                <td>${n.complemento_variable.tipo}</td>
+                <td>${n.complemento_variable.importe.toFixed(2)}</td>
+                <td>${n.retenciones.seguridad_social.toFixed(2)}</td>
+                <td>${n.retenciones.irpf.toFixed(2)}</td>
+                <td>${n.salario_bruto.toFixed(2)}</td>
+                <td>${n.salario_neto.toFixed(2)}</td>
+                `;
+                tbody.appendChild(fila);
+            })
+            .catch(error => {
+                console.error('Error al cargar el JSON:', error);
+                document.getElementById('datos_nomina1').innerHTML =
+                '<tr><td colspan="11">Error al cargar los datos. Asegúrate de ejecutar desde un servidor web.</td></tr>';
+            });
+        </script>
+    </body>
+</html>
